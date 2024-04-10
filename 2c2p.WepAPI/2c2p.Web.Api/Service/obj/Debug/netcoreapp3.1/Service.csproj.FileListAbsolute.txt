@@ -1,0 +1,10 @@
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\Service\obj\Debug\netcoreapp3.1\Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\Service\obj\Debug\netcoreapp3.1\Service.AssemblyInfoInputs.cache
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\Service\obj\Debug\netcoreapp3.1\Service.AssemblyInfo.cs
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\Service\obj\Debug\netcoreapp3.1\Service.csproj.CoreCompileInputs.cache
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\Service\bin\Debug\netcoreapp3.1\Service.deps.json
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\Service\bin\Debug\netcoreapp3.1\Service.dll
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\Service\bin\Debug\netcoreapp3.1\Service.pdb
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\Service\obj\Debug\netcoreapp3.1\Service.csproj.AssemblyReference.cache
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\Service\obj\Debug\netcoreapp3.1\Service.dll
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\Service\obj\Debug\netcoreapp3.1\Service.pdb

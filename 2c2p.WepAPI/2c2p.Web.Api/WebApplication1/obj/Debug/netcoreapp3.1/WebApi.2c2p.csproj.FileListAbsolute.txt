@@ -1,0 +1,6 @@
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\WebApplication1\obj\Debug\netcoreapp3.1\WebApi.2c2p.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\WebApplication1\obj\Debug\netcoreapp3.1\WebApi.2c2p.AssemblyInfoInputs.cache
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\WebApplication1\obj\Debug\netcoreapp3.1\WebApi.2c2p.AssemblyInfo.cs
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\WebApplication1\obj\Debug\netcoreapp3.1\WebApi.2c2p.csproj.CoreCompileInputs.cache
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\WebApplication1\obj\Debug\netcoreapp3.1\WebApi.2c2p.MvcApplicationPartsAssemblyInfo.cache
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\WebApplication1\obj\Debug\netcoreapp3.1\WebApi.2c2p.csproj.AssemblyReference.cache

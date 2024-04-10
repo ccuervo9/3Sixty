@@ -1,0 +1,10 @@
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\BussinesLogic\obj\Debug\netcoreapp3.1\BussinesLogic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\BussinesLogic\obj\Debug\netcoreapp3.1\BussinesLogic.AssemblyInfoInputs.cache
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\BussinesLogic\obj\Debug\netcoreapp3.1\BussinesLogic.AssemblyInfo.cs
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\BussinesLogic\obj\Debug\netcoreapp3.1\BussinesLogic.csproj.CoreCompileInputs.cache
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\BussinesLogic\bin\Debug\netcoreapp3.1\BussinesLogic.deps.json
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\BussinesLogic\bin\Debug\netcoreapp3.1\BussinesLogic.dll
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\BussinesLogic\bin\Debug\netcoreapp3.1\BussinesLogic.pdb
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\BussinesLogic\obj\Debug\netcoreapp3.1\BussinesLogic.csproj.AssemblyReference.cache
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\BussinesLogic\obj\Debug\netcoreapp3.1\BussinesLogic.dll
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\BussinesLogic\obj\Debug\netcoreapp3.1\BussinesLogic.pdb

@@ -1,0 +1,15 @@
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\Service\bin\Debug\net8.0\Service.deps.json
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\Service\bin\Debug\net8.0\Service.dll
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\Service\bin\Debug\net8.0\Service.pdb
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\Service\bin\Debug\net8.0\DataAccess.dll
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\Service\bin\Debug\net8.0\DataAccess.pdb
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\Service\obj\Debug\net8.0\Service.csproj.AssemblyReference.cache
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\Service\obj\Debug\net8.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\Service\obj\Debug\net8.0\Service.AssemblyInfoInputs.cache
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\Service\obj\Debug\net8.0\Service.AssemblyInfo.cs
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\Service\obj\Debug\net8.0\Service.csproj.CoreCompileInputs.cache
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\Service\obj\Debug\net8.0\Service.csproj.Up2Date
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\Service\obj\Debug\net8.0\Service.dll
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\Service\obj\Debug\net8.0\refint\Service.dll
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\Service\obj\Debug\net8.0\Service.pdb
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\Service\obj\Debug\net8.0\ref\Service.dll

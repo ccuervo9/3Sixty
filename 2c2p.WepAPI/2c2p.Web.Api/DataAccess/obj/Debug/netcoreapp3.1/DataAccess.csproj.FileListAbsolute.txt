@@ -1,0 +1,13 @@
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.deps.json
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.runtimeconfig.json
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.runtimeconfig.dev.json
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.dll
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.pdb
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.csproj.AssemblyReference.cache
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.AssemblyInfoInputs.cache
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.AssemblyInfo.cs
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.csproj.CoreCompileInputs.cache
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.dll
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.pdb
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.genruntimeconfig.cache

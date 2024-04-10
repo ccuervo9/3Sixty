@@ -1,0 +1,14 @@
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\DataAccess\bin\Release\net8.0\DataAccess.deps.json
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\DataAccess\bin\Release\net8.0\DataAccess.runtimeconfig.json
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\DataAccess\bin\Release\net8.0\DataAccess.dll
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\DataAccess\bin\Release\net8.0\DataAccess.pdb
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\DataAccess\obj\Release\net8.0\DataAccess.csproj.AssemblyReference.cache
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\DataAccess\obj\Release\net8.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\DataAccess\obj\Release\net8.0\DataAccess.AssemblyInfoInputs.cache
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\DataAccess\obj\Release\net8.0\DataAccess.AssemblyInfo.cs
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\DataAccess\obj\Release\net8.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\DataAccess\obj\Release\net8.0\DataAccess.dll
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\DataAccess\obj\Release\net8.0\refint\DataAccess.dll
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\DataAccess\obj\Release\net8.0\DataAccess.pdb
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\DataAccess\obj\Release\net8.0\DataAccess.genruntimeconfig.cache
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\DataAccess\obj\Release\net8.0\ref\DataAccess.dll

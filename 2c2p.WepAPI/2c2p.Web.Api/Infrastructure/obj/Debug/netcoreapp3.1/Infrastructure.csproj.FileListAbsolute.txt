@@ -1,0 +1,10 @@
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.deps.json
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.dll
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.pdb
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.csproj.AssemblyReference.cache
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.AssemblyInfoInputs.cache
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.AssemblyInfo.cs
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.csproj.CoreCompileInputs.cache
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.dll
+C:\Repository\2c2p.WepAPI\2c2p.Web.Api\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.pdb

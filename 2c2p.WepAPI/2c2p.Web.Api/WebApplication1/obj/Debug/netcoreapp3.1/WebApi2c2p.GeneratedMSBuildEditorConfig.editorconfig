@@ -1,0 +1,5 @@
+is_global = true
+build_property.RootNamespace = WebApi2c2p
+build_property.ProjectDir = C:\Repository\2c2p.WepAPI\2c2p.Web.Api\WebApplication1\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
