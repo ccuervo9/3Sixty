@@ -5,13 +5,22 @@ SET ansi_nulls ON
 go
 SET quoted_identifier ON
 go
-
+/* =============================================
+ Author:  Cristian Cuervo
+ alter date:  03/12/2024
+ Description:	SP integration for  2c2p.com/reference/pay to Insert  [[Tab_CreditCardTransDetails]]  and [Tab_PaymentLine]
+ ===================Versioning==========================
+ User			Date					Change 
+ _______________________________________________________
+ c.cuervo		4-11-2024				SP Creation
+ _______________________________________________________
+ */
 create or alter procedure [dbo].[Usp_UpdateTransactions_2c2p]
 (
     @ReturnStatus nvarchar(2),
     @Status nvarchar(2),
     @RowId nvarchar(max),
-	@CTD_ResponseCode nvarchar(10) 
+    @CTD_ResponseCode nvarchar(10)
 )
 AS
 SET nocount ON;
@@ -22,32 +31,30 @@ BEGIN
     SELECT top 1
         @PA_SifNo = PA_SifNo
     FROM [IRS_BO_AirMacau].[dbo].[tab_paymentline]
-    where  PA_HandheldMergeRowId= @RowId 
-	--PA_ProcessStatus 
+    where PA_HandheldMergeRowId = @RowId
 
+    ---
     update [dbo].[Tab_CreditCardTransDetails]
     set CTD_ReturnStatus = @ReturnStatus,
         CTD_Status = @Status,
-		CTD_ResponseCode =@CTD_ResponseCode 
+        CTD_ResponseCode = @CTD_ResponseCode
+    where CTD_ProcessRefNo = @RowId
 
-		where CTD_ProcessRefNo = @RowId
+    ---
+    update [dbo].[Tab_PaymentLine]
+    set PA_ProcessStatus = @Status
+    where PA_SifNo = @PA_SifNo
+          and PA_HandheldMergeRowId = @RowId
 
 
-	update [dbo].[Tab_PaymentLine]
-	set PA_ProcessStatus = @Status
-	where 
-	PA_SifNo = @PA_SifNo and
-	 PA_HandheldMergeRowId= @RowId 
- 
-
- --delete card if it is aprove it 'A'
- --ctd_cardNoBx
+--delete card if it is aprove it 'A'
+--ctd_cardNoBx
 
 
 
-	--select top 6 * from Tab_OrderHeader 
- --   SELECT TOP 2 * FROM [IRS_BO_AirMacau].[dbo].[Tab_PaymentLine]
- --   select top 2  *   from [dbo].[Tab_CreditCardTransDetails]
- --   select  top 2*     from Tab_TransCreditCardTrans
-		   
+--select top 6 * from Tab_OrderHeader 
+--   SELECT TOP 2 * FROM [IRS_BO_AirMacau].[dbo].[Tab_PaymentLine]
+--   select top 2  *   from [dbo].[Tab_CreditCardTransDetails]
+--   select  top 2*     from Tab_TransCreditCardTrans
+
 end

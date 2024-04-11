@@ -102,14 +102,14 @@ namespace BussinesLogic.Services.Payment
                             transactionAmount = new TransactionAmount
                             {
                                 amountText = item.amountText.ToString(),
-                                currencyCode = item.currencyCode, // Example value
+                                currencyCode ="USD", // Example value
                                 decimalPlaces = item.decimalPlaces,
                                 amount = item.pa_amount,
                             },
                             originalTransactionAmount = new OriginalTransactionAmount
                             {
                                 amountText = item.amountText.ToString(),
-                                currencyCode = item.currencyCode, // Example value
+                                currencyCode = "USD", // Example value
                                 decimalPlaces = item.decimalPlaces,
                                 amount = item.pa_amount,
                                
@@ -127,14 +127,6 @@ namespace BussinesLogic.Services.Payment
                                 personType = item.personType, // Example value
                                 personName = "",
                                 seqNo = "1" // Example value
-                            },
-                            purchaseItemize = new List<PurchaseItemize>
-                            {
-                                new PurchaseItemize
-                                {
-                                    purchaseItemType = null, // Example value
-                                    referenceNo =  rnd.Next().ToString(),
-                                }
                             }
                         };
                         paymentDTOList.Add(paymentDTO);
@@ -161,6 +153,7 @@ namespace BussinesLogic.Services.Payment
                             pa_OrderNo = item.pa_OrderNo.ToString(),
                             officeId = item.officeId,
                             orderNo = item.orderNo.ToString(),
+                            request3dsFlag = "N",
                             productDescription = item.productDescription.ToString(),
                             paymentType = item.paymentType,
                             mcpFlag = item.mcpFlag.ToString(),
@@ -221,15 +214,8 @@ namespace BussinesLogic.Services.Payment
                                 personType = item.personType, // Example value
                                 personName = "",
                                 seqNo = "1" // Example value
-                            },
-                            purchaseItemize = new List<PurchaseItemize>
-                            {
-                                new PurchaseItemize
-                                {
-                                    purchaseItemType = null ,// Example value
-                                      referenceNo =  rnd.Next().ToString(),
-                                }
                             }
+                           
                         };
                         paymentDTOList.Add(paymentDTO);
 
