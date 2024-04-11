@@ -60,7 +60,7 @@ namespace WebApi2c2p.Controllers
 
 
                 SettlementResponseDTO paymentResponse = JsonConvert.DeserializeObject<SettlementResponseDTO>(jsonString);
-                LogHelper.LogInfo(this.HttpContext, jsonString, JsonOperations.ToJson(response.Content));
+                LogHelper.LogInfo(this.HttpContext, jsonString, JsonOperations.ToJson(response.Content), LogTypeEnum.info);
                 return paymentResponse;              
 
             }

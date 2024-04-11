@@ -1,15 +1,11 @@
-﻿
-using DataAccess.Context;
+﻿using DataAccess.Context;
 using DataAccess.Interfaces.Payment;
 using DataAccess.Model.Payment;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
-
 using Microsoft.Data.SqlClient;
 using System.Linq;
-
-
 
 
 namespace DataAccess.Repository.Payment
@@ -75,6 +71,35 @@ namespace DataAccess.Repository.Payment
             {
                 return false;
             }
+        }
+
+        public bool InsertTransactionHeader(PaymentModel paymentInfo )
+        {
+
+            try
+            {
+                var parameters = new SqlParameter[]
+                     {
+                        new SqlParameter("@SifNo", paymentInfo.pa_SifNo != string.Empty ? paymentInfo.pa_SifNo:  DBNull.Value ),
+                        new SqlParameter("@Sector", paymentInfo.pa_Sector != string.Empty  ? paymentInfo.pa_Sector:  DBNull.Value ),
+                        new SqlParameter("@OrderNo", paymentInfo.pa_OrderNo != string.Empty? paymentInfo.pa_OrderNo:  DBNull.Value ),
+
+                     };
+                var command = "exec Usp_InsertTransactions_2c2p " +
+                    "@SifNo ," +
+                    "@Sector ," +
+                    "@OrderNo";
+
+                var result = _context.Database.ExecuteSqlRaw(command, parameters);
+
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }          
+
         }
 
         List<PaymentModel> IPaymentRepository.GetById(int xAirlineCode, DateTime xDateFrom, DateTime xDateTo)

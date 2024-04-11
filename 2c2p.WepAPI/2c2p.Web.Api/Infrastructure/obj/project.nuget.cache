@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "slYmj6nSrZm2yjbsfxCcA3nz+GuG+a8qdZOl/peWsAFCCcNVRF7df2TcSxmHLGKOtBNVP3d/XO+YdRSKlHAIzQ==",
+  "dgSpecHash": "KF4OiomAXyWYFrbIcEOe7+PTKaiA/82jM11C2qMm34e98Wc28H/HMxQLzlbgp0+Cv+ET66k+oZJG554Q5A/rKw==",
   "success": true,
-  "projectFilePath": "C:\\Repository\\2c2p.WepAPI\\2c2p.Web.Api\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cristian.cuervo\\.nuget\\packages\\log4net\\2.0.17\\log4net.2.0.17.nupkg.sha512",
     "C:\\Users\\cristian.cuervo\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",

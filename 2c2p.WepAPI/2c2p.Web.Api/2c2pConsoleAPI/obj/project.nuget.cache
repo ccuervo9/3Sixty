@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+WmUvxkNe3yb/7m7DqEHXjvQFcZkxkltTAKBA6SE+IQwq/JUDUGCPz/bAQEDYIIKJyNo9g2OBa+3ybGgZC5vDA==",
+  "dgSpecHash": "jy7hriJxUwU2h7x2ld1+Rrnt89N7zSQtbOB8IumcLNAT9sM1ElEyUkU2FE+CNhgCqdLmDF2BE89uaj3ewn2/Fg==",
   "success": true,
-  "projectFilePath": "C:\\Repository\\2c2p.WepAPI\\2c2p.Web.Api\\2c2pConsoleAPI\\2c2pConsoleAPI.csproj",
+  "projectFilePath": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\2c2pConsoleAPI\\2c2pConsoleAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cristian.cuervo\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\cristian.cuervo\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",

@@ -49,7 +49,7 @@ namespace WebApi2c2p.Controllers
          
 
                 TransactionStatusResponseDTO paymentResponse = JsonConvert.DeserializeObject<TransactionStatusResponseDTO>(OrderNo);
-                LogHelper.LogInfo(this.HttpContext, OrderNo, JsonOperations.ToJson(response.Content));
+                LogHelper.LogInfo(this.HttpContext, OrderNo, JsonOperations.ToJson(response.Content), LogTypeEnum.info);
                 return paymentResponse;              
 
             }
@@ -70,23 +70,8 @@ namespace WebApi2c2p.Controllers
         {
             try
             {
-              
-                var options = new RestClientOptions(configValue.ReadConfig("2c2pConfigs", "urlInquiryTransactionList"));
-
-                var client = new RestClient(options);
-                JsonSerializer serializer = new JsonSerializer();
-                string jsonString = JsonOperations.ToJson(payment);
-                var request = new RestRequest(jsonString);
-                request.AddHeader("accept", "application/json");
-                request.AddHeader("apiKey", "12");
-                request.AddJsonBody(jsonString, false);
-                var response = await client.PostAsync(request);
-
-                Console.WriteLine("{0}", response.Content);
-
-                TransactionListResponseDTO paymentResponse = JsonConvert.DeserializeObject<TransactionListResponseDTO>(jsonString);
-                LogHelper.LogInfo(this.HttpContext, jsonString, JsonOperations.ToJson(response.Content));
-                return paymentResponse;
+                           
+                return null;
 
             }
 

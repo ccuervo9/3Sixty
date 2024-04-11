@@ -62,7 +62,7 @@ namespace WebApi2c2p.Controllers
                 Console.WriteLine("{0}", response.Content);
 
                 RefundResponseDTO paymentResponse = JsonConvert.DeserializeObject<RefundResponseDTO>(jsonString);
-                LogHelper.LogInfo(this.HttpContext, jsonString, JsonOperations.ToJson(response.Content));
+                LogHelper.LogInfo(this.HttpContext, jsonString, JsonOperations.ToJson(response.Content), LogTypeEnum.info);
                 return paymentResponse;
 
             }

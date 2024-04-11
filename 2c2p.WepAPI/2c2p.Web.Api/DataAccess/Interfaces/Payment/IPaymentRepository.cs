@@ -13,6 +13,7 @@ namespace DataAccess.Interfaces.Payment
         void Add(PaymentModel entity);
         public bool Update(string status, string idTransaction , string idRow);
         void Delete(PaymentModel entity);
+        public bool InsertTransactionHeader(PaymentModel paymentInfo);
     }
 
 }

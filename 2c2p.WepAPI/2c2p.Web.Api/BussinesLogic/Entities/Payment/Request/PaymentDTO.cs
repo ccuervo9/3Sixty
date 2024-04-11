@@ -1,5 +1,6 @@
 ﻿
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 
 
@@ -47,7 +48,7 @@ namespace BussinesLogic.Entities.Payment.Request
         public string amountText { get; set; }
         public string currencyCode { get; set; }
         public int decimalPlaces { get; set; }
-        public int amount { get; set; }
+        public decimal amount { get; set; }
     }
 
     public class PurchaseItemize
@@ -65,6 +66,7 @@ namespace BussinesLogic.Entities.Payment.Request
     {
         public ApiRequest apiRequest { get; set; }
         public string paymentType { get; set; }
+        public string request3dsFlag { get; set; }  
         public CreditCardDetails creditCardDetails { get; set; }
         public StoreCardDetails storeCardDetails { get; set; }
         public InstallmentPaymentDetails installmentPaymentDetails { get; set; }
@@ -78,6 +80,15 @@ namespace BussinesLogic.Entities.Payment.Request
         public string productDescription { get; set; }
         public string mcpFlag { get; set; }
         public List<PurchaseItemize> purchaseItemize { get; set; }
+
+        [JsonIgnore]
+        public string pa_Sector { get; set; }
+
+        [JsonIgnore]
+        public string pa_SifNo { get; set; }
+        [JsonIgnore]
+        public string pa_OrderNo { get; set; }
+        
     }
 
     public class StoreCardDetails
@@ -90,7 +101,7 @@ namespace BussinesLogic.Entities.Payment.Request
         public string amountText { get; set; }
         public string currencyCode { get; set; }
         public int decimalPlaces { get; set; }
-        public int amount { get; set; }
+        public decimal amount { get; set; }
     }
 
 

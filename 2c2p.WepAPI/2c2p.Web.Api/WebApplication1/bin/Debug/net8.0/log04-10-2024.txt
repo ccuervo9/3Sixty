@@ -1,0 +1,15 @@
+
+Log Entry : 8:53:32 AM Wednesday, April 10, 2024
+  :
+  :{"$type":"BussinesLogic.Entities.Helpers.LogsDTO, BussinesLogic","AuditLogKey":0,"LogTypeKey":2,"EventDate":"2024-04-10T08:53:21.1877435-05:00","Message":"Success request","DataContext":null,"Url":"/api/Payment/PaymentNonUI","UserName":null,"IP":"","ExceptionType":null,"Response":"\"{\\n  \\\"version\\\": \\\"2.0\\\",\\n  \\\"apiResponse\\\": {\\n    \\\"responseMessageId\\\": \\\"13b29043-1af2-4954-8771-abf24a395bf7\\\",\\n    \\\"responseToRequestMessageId\\\": \\\"0HN2ISHC33045:00000002\\\",\\n    \\\"response","LogType":null}
+-------------------------------
+
+Log Entry : 8:54:35 AM Wednesday, April 10, 2024
+  :
+  :{"$type":"BussinesLogic.Entities.Helpers.LogsDTO, BussinesLogic","AuditLogKey":0,"LogTypeKey":2,"EventDate":"2024-04-10T08:54:32.9099834-05:00","Message":"Success request","DataContext":null,"Url":"/api/Payment/PaymentNonUI","UserName":null,"IP":"","ExceptionType":null,"Response":"\"{\\n  \\\"version\\\": \\\"2.0\\\",\\n  \\\"apiResponse\\\": {\\n    \\\"responseMessageId\\\": \\\"13b29043-1af2-4954-8771-abf24a395bf7\\\",\\n    \\\"responseToRequestMessageId\\\": \\\"0HN2ISHC33045:00000002\\\",\\n    \\\"response","LogType":null}
+-------------------------------
+
+Log Entry : 8:57:29 AM Wednesday, April 10, 2024
+  :
+  :{"$type":"BussinesLogic.Entities.Helpers.LogsDTO, BussinesLogic","AuditLogKey":0,"LogTypeKey":2,"EventDate":"2024-04-10T08:55:49.9204083-05:00","Message":"Success request","DataContext":null,"Url":"/api/Payment/PaymentNonUI","UserName":null,"IP":"","ExceptionType":null,"Response":"\"{\\n  \\\"version\\\": \\\"2.0\\\",\\n  \\\"apiResponse\\\": {\\n    \\\"responseMessageId\\\": \\\"bc0885a4-6524-4adf-93dd-4a6264d46973\\\",\\n    \\\"responseToRequestMessageId\\\": \\\"0HN2ISHC3304A:00000002\\\",\\n    \\\"response","LogType":null}
+-------------------------------

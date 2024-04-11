@@ -4,8 +4,10 @@ using DataAccess.Model.Inquiry;
 using DataAccess.Model.Payment;
 using DataAccess.Model.Refund;
 using DataAccess.Model.Settlement;
+using DataAccess.Model.TabOrder;
 using DataAccess.Model.Void;
 using Microsoft.EntityFrameworkCore;
+using System.Data.Common;
 
 
 
@@ -22,6 +24,7 @@ namespace DataAccess.Context
             modelBuilder.Entity<RefundModel>().HasNoKey();
             modelBuilder.Entity<SettlementModel>().HasNoKey();
             modelBuilder.Entity<VoidModel>().HasNoKey();
+            modelBuilder.Entity<TabOrderModel>().HasNoKey();
 
         }
 
@@ -36,6 +39,7 @@ namespace DataAccess.Context
         public DbSet<RefundModel> Refund { get; set; }
         public DbSet<SettlementModel> Settlement { get; set; }
         public DbSet<VoidModel> Void { get; set; }
+        public DbSet<TabOrderModel> TabOrder { get; set; }      
 
 
     }

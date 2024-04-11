@@ -6,7 +6,7 @@ namespace BussinesLogic.Entities.Helpers
     public partial class LogsDTO
     {
         public int AuditLogKey { get; set; }
-        public int LogTypeKey { get; set; }
+        public string LogTypeKey { get; set; }
         public System.DateTime EventDate { get; set; }
         public string Message { get; set; }
         public string DataContext { get; set; }
@@ -14,6 +14,7 @@ namespace BussinesLogic.Entities.Helpers
         public string UserName { get; set; }
         public string IP { get; set; }
         public string ExceptionType { get; set; }
+        public string request { get; set;  }
         public string Response { get; set; }
 
         public virtual LogType LogType { get; set; }

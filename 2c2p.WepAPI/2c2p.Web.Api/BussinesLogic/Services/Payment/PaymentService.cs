@@ -60,10 +60,14 @@ namespace BussinesLogic.Services.Payment
                     {
                         var paymentDTO = new PaymentDTO
                         {
+                            pa_SifNo = item.pa_SifNo,
+                            pa_Sector = item.pa_Sector.ToString(),
+                            pa_OrderNo = item.pa_OrderNo.ToString(),    
                             officeId = "3SIXTY_TH",
                             orderNo = item.orderNo.ToString(),
                             productDescription = item.productDescription.ToString(),
                             paymentType = "CC",
+                            request3dsFlag = "N",
                             mcpFlag = item.mcpFlag.ToString(),
                             apiRequest = new ApiRequest
                             {
@@ -74,7 +78,7 @@ namespace BussinesLogic.Services.Payment
                             {
                                 cardNumber = "4111111111111111",
                                 cardExpiryMMYY = "1224",
-                                cvvCode = null,
+                                cvvCode = "123",
                                 payerName = null,
                                 issuerBankCountry = null, // Example value
                                 issuerBankName = null// Example value
@@ -100,14 +104,15 @@ namespace BussinesLogic.Services.Payment
                                 amountText = item.amountText.ToString(),
                                 currencyCode = item.currencyCode, // Example value
                                 decimalPlaces = item.decimalPlaces,
-                                amount = 1
+                                amount = item.pa_amount,
                             },
                             originalTransactionAmount = new OriginalTransactionAmount
                             {
                                 amountText = item.amountText.ToString(),
                                 currencyCode = item.currencyCode, // Example value
                                 decimalPlaces = item.decimalPlaces,
-                                amount = 1
+                                amount = item.pa_amount,
+                               
                             },
 
                             notificationURLs = new NotificationURLs
@@ -151,6 +156,9 @@ namespace BussinesLogic.Services.Payment
 
                         var paymentDTO = new PaymentDTO
                         {
+                            pa_SifNo = item.pa_SifNo,
+                            pa_Sector = item.pa_Sector.ToString(),
+                            pa_OrderNo = item.pa_OrderNo.ToString(),
                             officeId = item.officeId,
                             orderNo = item.orderNo.ToString(),
                             productDescription = item.productDescription.ToString(),
@@ -164,7 +172,7 @@ namespace BussinesLogic.Services.Payment
                             creditCardDetails = new CreditCardDetails
                             {
                                 cardNumber = item.cardNumber,
-                                cardExpiryMMYY = "",
+                                cardExpiryMMYY = "", // TODO credit card detail 
                                 cvvCode = null,
                                 payerName = null,
                                 issuerBankCountry = null, // Example value
@@ -191,14 +199,14 @@ namespace BussinesLogic.Services.Payment
                                 amountText = item.amountText.ToString(),
                                 currencyCode = item.currencyCode, // Example value
                                 decimalPlaces = item.decimalPlaces,
-                                amount = 1
+                                amount = item.pa_amount,
                             },
                             originalTransactionAmount = new OriginalTransactionAmount
                             {
                                 amountText = item.amountText.ToString(),
                                 currencyCode = item.currencyCode, // Example value
                                 decimalPlaces = item.decimalPlaces,
-                                amount = 1
+                                amount = item.pa_amount,
                             },
 
                             notificationURLs = new NotificationURLs
@@ -226,6 +234,8 @@ namespace BussinesLogic.Services.Payment
                         paymentDTOList.Add(paymentDTO);
 
                     };
+
+
 
                     return paymentDTOList;
                 }
@@ -269,6 +279,20 @@ namespace BussinesLogic.Services.Payment
 
         }
 
+
+        public bool InsertTransactionHeader(PaymentDTO paymentDTOInfo)
+        {
+
+            PaymentModel paymentModelInfo = new PaymentModel()
+            {
+                pa_SifNo = paymentDTOInfo.pa_SifNo,
+                pa_Sector = paymentDTOInfo.pa_Sector,
+                pa_OrderNo = paymentDTOInfo.pa_OrderNo
+            };
+
+            bool resultModel = _Repository.InsertTransactionHeader(paymentModelInfo);
+            return true;
+        }
 
         public void UpdateProduct(PaymentDTO payment)
         {

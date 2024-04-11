@@ -19,20 +19,39 @@ namespace WebApi2c2p.Helper
 
 
 
-        public static void LogInfo(HttpContext httpContext, string dataContext, string response)
+        /// <summary>
+        /// Log info method to record every log 
+        /// </summary>
+        /// <param name="httpContext"></param>
+        /// <param name="request"></param>
+        /// <param name="response"></param>
+        public static void LogInfo(HttpContext httpContext, string request, string response, LogTypeEnum logType)
         {
-            int logType = (int)LogTypeEnum.info;
-            string message = $"Success request";
-            Log(httpContext, dataContext, logType, message, null, response);
+            string logTypeR = string.Empty;
+            string message = string.Empty;
+            if (logType.Equals(LogTypeEnum.info))
+            {
+                logTypeR = logType.ToString();
+                message = "Success request";
+            }
+            else if (logType.Equals(LogTypeEnum.error))
+            {
+                logTypeR = logType.ToString();
+                message = "Error";
+            }
+
+            Log(httpContext, request, logTypeR, message, null, response);
         }
 
-        private static void Log(HttpContext httpContext, string dataContext, int logTypeKey, string message, string exceptionType, string response)
+
+
+        private static void Log(HttpContext httpContext, string request, string logTypeKey, string message, string exceptionType, string response)
         {
             string userName = httpContext.User?.Identity?.Name;
             string ip = httpContext.Request.PathBase;
             string url = httpContext.Request.Path;
 
-            string resultResponse = SizeResponse(response);
+       
 
             LogsDTO entity = new LogsDTO
             {
@@ -42,9 +61,10 @@ namespace WebApi2c2p.Helper
                 Url = url,
                 UserName = userName,
                 IP = ip,
+                request = request,
                 ExceptionType = exceptionType,
-                Response = resultResponse
-            };       
+                Response = response
+            };
 
             var settings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All };
             var textLog = JsonConvert.SerializeObject(entity, settings);
@@ -57,13 +77,13 @@ namespace WebApi2c2p.Helper
             {
                 Message = (message != "Success request") ? "Error" : message,
                 ExceptionType = exceptionType,
-                Response = resultResponse,
+                Response = response,
                 Url = url
             };
             string resultLog = JsonOperations.ToJson(log);
             logger2.Info(resultLog);
 
-            entity.DataContext = dataContext;
+            entity.DataContext = request;
             entity.Message = message;
             string result = JsonOperations.ToJson(entity);
             logger.Info(result);
@@ -89,19 +109,19 @@ namespace WebApi2c2p.Helper
         public static void LogWrite(string logMessage)
         {
             AppSettings configValue = new AppSettings();
-            string m_exePath = new RestClientOptions(configValue.ReadConfig("Logger", "path")).ToString();
-                  
-            m_exePath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            string m_exePath = new string(configValue.ReadConfig("Logger", "path").ToString());
+
+
             try
             {
-                using (StreamWriter w = File.AppendText(m_exePath + "\\" + "log"+DateTime.Now.ToString("MM-dd-yyyy") + ".txt"))
+                using (StreamWriter w = File.AppendText(m_exePath + "\\" + "log_" + DateTime.Now.ToString("MM-dd-yyyy") + ".txt"))
                 {
                     Log(logMessage, w);
                 }
             }
             catch (Exception ex)
             {
-
+                throw ex;
             }
         }
 
@@ -118,6 +138,7 @@ namespace WebApi2c2p.Helper
             }
             catch (Exception ex)
             {
+                throw;
             }
         }
 

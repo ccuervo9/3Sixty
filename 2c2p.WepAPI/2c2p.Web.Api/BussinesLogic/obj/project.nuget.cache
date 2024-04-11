@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rRuLMNTYQBL9qN/RapgSy0IKwSBtEcthhp6vfeTd3Q4gfUVFJLhy03X4GC7+vaRROCJZTPTa2D2Jh4iHSuFmCw==",
+  "dgSpecHash": "27JacHKAh8iUGssnqs7++J7fyzrUS8qCqINkynx4Dg/VVBMujo1zH3Nt/b8HaX5pvHUDVyrSg/u8zBH6WtRjog==",
   "success": true,
-  "projectFilePath": "C:\\Repository\\2c2p.WepAPI\\2c2p.Web.Api\\BussinesLogic\\BussinesLogic.csproj",
+  "projectFilePath": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\BussinesLogic\\BussinesLogic.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cristian.cuervo\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\cristian.cuervo\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",

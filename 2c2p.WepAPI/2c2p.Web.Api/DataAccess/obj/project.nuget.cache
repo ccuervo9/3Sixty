@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Zs9UTsI+itKkyTKtfJBnQFQieKmwD8GrnHs5i89Z/5ArXzMcs7f4FfvNS+1o2mREX2G9MduoGyWfisNgESVpTg==",
+  "dgSpecHash": "34O2+3nInaUm70lNU/UV8m/1ng80+UQBbnUm5kTmLR99htVIrKukdaQ1RCFyqkStFnVW0Rq8AleMpmHxN0gChw==",
   "success": true,
-  "projectFilePath": "C:\\Repository\\2c2p.WepAPI\\2c2p.Web.Api\\DataAccess\\DataAccess.csproj",
+  "projectFilePath": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\DataAccess\\DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cristian.cuervo\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\cristian.cuervo\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

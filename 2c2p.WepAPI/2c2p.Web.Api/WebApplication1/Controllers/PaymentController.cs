@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-
 using RestSharp;
 using System;
 using System.Threading.Tasks;
@@ -13,6 +12,7 @@ using Swashbuckle.AspNetCore.Annotations;
 using BussinesLogic.Entities.Payment.Request;
 using BussinesLogic.Entities.Payment.Response;
 using Infrastructure.Helper;
+using DataAccess.Model.Payment;
 
 
 
@@ -58,7 +58,7 @@ namespace WebApi2c2p.Controllers
                 {
                     if (item != null)
                     {
-                        order += order + 1;
+                        order = order + 1;
                         paymentResponse = await SendDataAsync(client, item, order);
                     }
                 }
@@ -147,11 +147,15 @@ namespace WebApi2c2p.Controllers
 
                 PaymentResponseDTO paymentResponse = JsonConvert.DeserializeObject<PaymentResponseDTO>(response.Content);
 
-                LogHelper.LogInfo(this.HttpContext, jsonString, JsonOperations.ToJson(response.Content));
+                LogHelper.LogInfo(this.HttpContext, jsonString, JsonOperations.ToJson(response.Content), LogTypeEnum.info);
+
+
+                _paymentService.InsertTransactionHeader( product);
+
 
                 if (response.IsSuccessStatusCode)
                 {
-                    LogHelper.LogInfo(this.HttpContext, $"Transaction {order} sent successfully.", JsonOperations.ToJson(response.Content));
+                    LogHelper.LogInfo(this.HttpContext, $"Transaction {order} sent successfully.", JsonOperations.ToJson(response.Content), LogTypeEnum.info);
                     // UpdateStatusTransaction for every transaction executed in external API 
                     _paymentService.UpdateStatusTransaction(paymentResponse);
 
@@ -159,14 +163,14 @@ namespace WebApi2c2p.Controllers
                 }
                 else
                 {
-                    LogHelper.LogInfo(this.HttpContext, $"Failed to send transaction {order}", JsonOperations.ToJson(response.Content));
+                    LogHelper.LogInfo(this.HttpContext, $"Failed to send transaction {order} and order {product.orderNo} " + jsonString, JsonOperations.ToJson(response.Content), LogTypeEnum.error);
                     return false;
                 }
 
             }
             catch (Exception ex)
             {
-                LogHelper.LogInfo(this.HttpContext, "Exeption External API ", ex.StackTrace.ToString());
+                LogHelper.LogInfo(this.HttpContext, "Exeption External API " , ex.Message.ToString(), LogTypeEnum.error);
                 return false;
             }
         }
@@ -177,6 +181,7 @@ namespace WebApi2c2p.Controllers
         [Authorize]
         public async Task<PrePaymentUIResponseDTO> PrepaymentUI([FromBody] PrePaymentUIDTO payment)
         {
+            PrePaymentUIResponseDTO paymentResponse = new PrePaymentUIResponseDTO();
             try
             {
 
@@ -196,8 +201,8 @@ namespace WebApi2c2p.Controllers
 
                 Console.WriteLine("{0}", response.Content);
 
-                PrePaymentUIResponseDTO paymentResponse = JsonConvert.DeserializeObject<PrePaymentUIResponseDTO>(jsonString);
-                LogHelper.LogInfo(this.HttpContext, jsonString, JsonOperations.ToJson(response.Content));
+                paymentResponse = JsonConvert.DeserializeObject<PrePaymentUIResponseDTO>(jsonString);
+                LogHelper.LogInfo(this.HttpContext, jsonString, JsonOperations.ToJson(response.Content),LogTypeEnum.info);
                 return paymentResponse;
 
             }
@@ -206,6 +211,10 @@ namespace WebApi2c2p.Controllers
             {
                 var res = new HttpResponseMessage(HttpStatusCode.InternalServerError);
                 res.Content = new StringContent(ex.Message);
+
+                LogHelper.LogInfo(this.HttpContext, "Exeption External API ", ex.Message.ToString(), LogTypeEnum.error);
+                return paymentResponse;
+
                 throw new System.Web.Http.HttpResponseException(res);
             }
 
