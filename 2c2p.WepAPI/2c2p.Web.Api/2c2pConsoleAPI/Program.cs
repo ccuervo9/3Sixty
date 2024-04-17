@@ -1,12 +1,6 @@
-﻿using Azure.Core;
-using BussinesLogic.Entities.Payment.Response;
-using Newtonsoft.Json;
-using RestSharp;
+﻿using RestSharp;
 using System;
-using System.Collections.Generic;
 using System.Configuration;
-using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
 
 

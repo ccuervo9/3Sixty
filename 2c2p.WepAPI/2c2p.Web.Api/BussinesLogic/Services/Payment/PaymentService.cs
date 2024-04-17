@@ -62,7 +62,13 @@ namespace BussinesLogic.Services.Payment
                         {
                             pa_SifNo = item.pa_SifNo,
                             pa_Sector = item.pa_Sector.ToString(),
-                            pa_OrderNo = item.pa_OrderNo.ToString(),    
+                            pa_OrderNo = item.pa_OrderNo.ToString(),
+                            RecordNo = item.RecordNo,
+                            SifNo = item.SifNo,
+                            Sector = item.Sector,
+                            FlightNo = item.FlightNo,
+                            PA_LineNo = item.PA_LineNo,
+
                             officeId = "3SIXTY_TH",
                             orderNo = item.orderNo.ToString(),
                             productDescription = item.productDescription.ToString(),
@@ -153,6 +159,11 @@ namespace BussinesLogic.Services.Payment
                             pa_OrderNo = item.pa_OrderNo.ToString(),
                             officeId = item.officeId,
                             orderNo = item.orderNo.ToString(),
+                            RecordNo = item.RecordNo,
+                            SifNo = item.SifNo,
+                            Sector = item.Sector,
+                            FlightNo = item.FlightNo,
+                            PA_LineNo = item.PA_LineNo,
                             request3dsFlag = "N",
                             productDescription = item.productDescription.ToString(),
                             paymentType = item.paymentType,
@@ -240,21 +251,35 @@ namespace BussinesLogic.Services.Payment
         /// </summary>
         /// <param name="payment">PaymentResponseDTO</param>
         /// <returns>true /false</returns>
-        public bool UpdateStatusTransaction(PaymentResponseDTO payment)
+        public bool UpdateStatusTransaction(PaymentResponseDTO paymentResponseDTO , PaymentDTO paymentDto)
         {
             try
             {
-                if (payment.apiResponse.acquirerResponseCode == acquirerResponse.Approved.ToString())
+                if (paymentResponseDTO.apiResponse.acquirerResponseCode == acquirerResponse.Approved.ToString())
                 {
                     return _Repository.Update(
-                        payment.apiResponse.acquirerResponseCode,
-                        payment.data.paymentResult.orderNo,
-                        payment.data.paymentResult.orderNo
+                        "A",
+                        null,
+                        paymentDto.RecordNo,
+                        paymentDto.SifNo,
+                        paymentDto.Sector, 
+                        paymentDto.FlightNo,
+                        paymentDto.orderNo,
+                         paymentDto.PA_LineNo
                         );
                 }
                 else
                 {
-                    return false;
+                    return _Repository.Update(
+                      "D",
+                      null,
+                      paymentDto.RecordNo,
+                      paymentDto.SifNo,
+                      paymentDto.Sector,
+                      paymentDto.FlightNo,
+                      paymentDto.orderNo,
+                       paymentDto.PA_LineNo
+                      );
                 }
 
             }

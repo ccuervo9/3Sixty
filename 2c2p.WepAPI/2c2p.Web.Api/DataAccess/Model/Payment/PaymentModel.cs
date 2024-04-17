@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace DataAccess.Model.Payment
 {
@@ -31,6 +32,11 @@ namespace DataAccess.Model.Payment
         public string pa_SifNo { get; set; }
         public string pa_Sector { get; set; }
         public string pa_OrderNo { get; set; }
+        public string RecordNo { get; set; }
+        public string SifNo { get; set; }
+        public string Sector { get; set; }
+        public string FlightNo { get; set; }
+        public string PA_LineNo { get; set; }
 
     }
 }

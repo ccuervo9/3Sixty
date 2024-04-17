@@ -17,10 +17,14 @@ go
  */
 create or alter procedure [dbo].[Usp_UpdateTransactions_2c2p]
 (
-    @ReturnStatus nvarchar(2),
     @Status nvarchar(2),
-    @RowId nvarchar(max),
-    @CTD_ResponseCode nvarchar(10)
+    @ReturnStatus nvarchar(2),
+    @RecordNo nvarchar(max),
+    @SifNo nvarchar(max),
+    @Sector nvarchar(max),
+    @FlightNo nvarchar(max),
+    @OrderNo nvarchar(max),
+    @LineNo nvarchar(max)
 )
 AS
 SET nocount ON;
@@ -28,23 +32,26 @@ BEGIN
 
     declare @PA_SifNo nvarchar(max)
 
-    SELECT top 1
-        @PA_SifNo = PA_SifNo
-    FROM [IRS_BO_AirMacau].[dbo].[tab_paymentline]
-    where PA_HandheldMergeRowId = @RowId
-
-    ---
+    --- select * 
+    --- from [dbo].[Tab_CreditCardTransDetails]
     update [dbo].[Tab_CreditCardTransDetails]
     set CTD_ReturnStatus = @ReturnStatus,
         CTD_Status = @Status,
-        CTD_ResponseCode = @CTD_ResponseCode
-    where CTD_ProcessRefNo = @RowId
+        CTD_ResponseCode = ' '
+    where CTD_RecordNo = @RecordNo
+          and CTD_SifNo = @SifNo
+          and CTD_Sector = @Sector
+          and CTD_FlightNo = @FlightNo
 
     ---
+    --- select * from [dbo].[Tab_PaymentLine]
+
     update [dbo].[Tab_PaymentLine]
     set PA_ProcessStatus = @Status
-    where PA_SifNo = @PA_SifNo
-          and PA_HandheldMergeRowId = @RowId
+    where PA_SifNo = @SifNo
+          and PA_Sector = @Sector
+          and PA_OrderNo = @OrderNo
+          and PA_LineNo = @LineNo
 
 
 --delete card if it is aprove it 'A'

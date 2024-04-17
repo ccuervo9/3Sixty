@@ -6,6 +6,8 @@ namespace BussinesLogic.Helpers
     public enum acquirerResponse
     {
         Approved = 00,   
+        Error = 06,
+
 
     }
 

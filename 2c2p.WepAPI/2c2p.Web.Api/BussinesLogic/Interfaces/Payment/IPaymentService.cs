@@ -12,7 +12,7 @@ namespace BussinesLogic.Interfaces.Payment
         IEnumerable<PaymentDTO> GetAllProducts();
         List<PaymentDTO> GetProductByParameters(PaymentDTO payment, string enviroment);
         void AddProduct(PaymentDTO payment);
-        bool UpdateStatusTransaction(PaymentResponseDTO payment);
+        public bool UpdateStatusTransaction(PaymentResponseDTO paymentResponseDTO, PaymentDTO paymentDto);
         void DeleteProduct(int id);
         public bool InsertTransactionHeader(PaymentDTO paymentInfo);
     }

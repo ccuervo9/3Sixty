@@ -35,27 +35,44 @@ namespace DataAccess.Repository.Payment
             throw new NotImplementedException();
         }
 
-        public bool Update(string status , string idTransaction, string idRow)
+        public bool Update(string status,
+            string returnStatus,
+            string RecordNo,
+            string SifNo,
+            string Sector,
+            string FlightNo,
+            string OrderNo,
+            string LineNo)
         {
             try
             {
                 var parameters = new SqlParameter[]
                      {
-                        new SqlParameter("@Status", status ),
-                        new SqlParameter("@CodeTransactionID", idTransaction ),
-                         new SqlParameter("@RowId", idTransaction )
+                        new SqlParameter("@Status"          ,status),
+                        new SqlParameter("@ReturnStatus"    ,returnStatus  != string.Empty ? returnStatus:  DBNull.Value),
+                        new SqlParameter("@RecordNo"        ,RecordNo),
+                        new SqlParameter("@SifNo"           ,SifNo),
+                        new SqlParameter("@Sector"          ,Sector),
+                        new SqlParameter("@FlightNo"        ,FlightNo),
+                        new SqlParameter("@OrderNo"         ,OrderNo),
+                        new SqlParameter("@LineNo"          ,LineNo),
                      };
-                var command = "exec [dbo].[Usp_UpdateTransactions_2c2p]" +
-                    "@ReturnStatus ," +
-                    "@Status," +
-                    "@RowId";
+                var command = "exec [dbo].[Usp_UpdateTransactions_2c2p] " +
+                    " @Status," +
+                    " @ReturnStatus," +
+                    " @RecordNo," +
+                    " @SifNo," +
+                    " @Sector," +
+                    " @FlightNo," +
+                    " @OrderNo," +
+                    " @LineNo";
 
                 var result = _context.Payment.FromSqlRaw(command, parameters).ToList();
                 return ValidateResult(result);
 
             }
             catch (Exception ex)
-            {                
+            {
                 return false;
             }
         }
@@ -73,7 +90,7 @@ namespace DataAccess.Repository.Payment
             }
         }
 
-        public bool InsertTransactionHeader(PaymentModel paymentInfo )
+        public bool InsertTransactionHeader(PaymentModel paymentInfo)
         {
 
             try
@@ -98,7 +115,7 @@ namespace DataAccess.Repository.Payment
             catch (Exception ex)
             {
                 throw ex;
-            }          
+            }
 
         }
 
@@ -123,9 +140,9 @@ namespace DataAccess.Repository.Payment
 
                 return result;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                throw ex;           
+                throw ex;
             }
 
         }

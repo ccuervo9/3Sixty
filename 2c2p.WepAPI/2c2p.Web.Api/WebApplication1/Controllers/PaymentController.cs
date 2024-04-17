@@ -151,14 +151,12 @@ namespace WebApi2c2p.Controllers
 
 
                 _paymentService.InsertTransactionHeader( product);
-
-
+                // UpdateStatusTransaction for every transaction executed in external API 
+                _paymentService.UpdateStatusTransaction(paymentResponse , product);
                 if (response.IsSuccessStatusCode)
                 {
                     LogHelper.LogInfo(this.HttpContext, $"Transaction {order} sent successfully.", JsonOperations.ToJson(response.Content), LogTypeEnum.info);
-                    // UpdateStatusTransaction for every transaction executed in external API 
-                    _paymentService.UpdateStatusTransaction(paymentResponse);
-
+                   
                     return true;
                 }
                 else

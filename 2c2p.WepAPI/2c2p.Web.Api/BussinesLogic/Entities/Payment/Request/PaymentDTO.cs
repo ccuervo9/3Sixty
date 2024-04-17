@@ -88,7 +88,22 @@ namespace BussinesLogic.Entities.Payment.Request
         public string pa_SifNo { get; set; }
         [JsonIgnore]
         public string pa_OrderNo { get; set; }
-        
+
+        [JsonIgnore]
+         public string RecordNo { get; set; }
+        [JsonIgnore]
+         public string SifNo { get; set; }
+        [JsonIgnore]
+         public string Sector { get; set; }
+        [JsonIgnore]
+         public string FlightNo { get; set; }
+        [JsonIgnore]
+         public string PA_LineNo { get; set; }
+
+
+
+
+
     }
 
     public class StoreCardDetails
