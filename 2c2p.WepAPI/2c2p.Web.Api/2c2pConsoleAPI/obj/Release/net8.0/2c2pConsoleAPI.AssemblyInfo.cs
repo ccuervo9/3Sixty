@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("2c2pConsoleAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3fa1905d3fddaa7ca89d2927c86a53a776ebdd9b")]
 [assembly: System.Reflection.AssemblyProductAttribute("2c2pConsoleAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("2c2pConsoleAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

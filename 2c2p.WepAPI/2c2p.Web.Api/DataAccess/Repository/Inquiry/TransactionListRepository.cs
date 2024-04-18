@@ -1,10 +1,8 @@
 ﻿using DataAccess.Context;
 using DataAccess.Interfaces.Inquiry;
 using DataAccess.Model.Inquiry;
-using DataAccess.Repository.Payment;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace DataAccess.Repository.Inquiry
 {

@@ -10,25 +10,34 @@ namespace _2c2pConsoleAPI
     {
         static Task Main(string[] args)
         {
-            string userInput;
-            do
+            try
             {
-                Console.WriteLine("Getting Bearer token from API ");
-                string token = GetToken();
-                Console.WriteLine(token);
+                string userInput;
+                do
+                {
+                    Console.WriteLine("Getting Bearer token from API ");
+                    string token = GetToken();
+                    Console.WriteLine(token);
 
-                Console.WriteLine("Executing External API Post endpoint ");
-                ExecuteExternalAPI(token);
-                // Execute your method or logic here
-                Console.WriteLine("Method executed!");
-                // Prompt the user to continue
-                Console.Write("Do you want to execute the method again? (y/n): ");
-                userInput = Console.ReadLine();
+                    Console.WriteLine("Executing External API Post endpoint ");
+                    ExecuteExternalAPI(token);
+                    // Execute your method or logic here
+                    Console.WriteLine("Method executed!");
+                    // Prompt the user to continue
+                    Console.Write("Do you want to execute the method again? (y/n): ");
+                    userInput = Console.ReadLine();
 
-            } while (userInput.Equals("y", StringComparison.OrdinalIgnoreCase));
+                } while (userInput.Equals("y", StringComparison.OrdinalIgnoreCase));
 
-            Console.WriteLine("Program ended.");
-            return Task.CompletedTask;
+                Console.WriteLine("Program ended.");
+                return Task.CompletedTask;
+            }
+            catch (Exception ex)
+            {
+                
+                Console.WriteLine(ex.Message);
+                return Task.CompletedTask;
+            }
         }
 
 
@@ -60,7 +69,7 @@ namespace _2c2pConsoleAPI
 
 
         /// <summary>
-        /// Method to generate bearer token to acces api
+        /// Method to generate bearer token to access api
         /// </summary>
         /// <returns></returns>
         static string GetToken()

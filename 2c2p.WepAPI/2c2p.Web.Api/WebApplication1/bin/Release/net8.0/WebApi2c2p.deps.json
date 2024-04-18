@@ -21,8 +21,7 @@
           "Swashbuckle.AspNetCore.Annotations": "6.5.0",
           "Swashbuckle.AspNetCore.Swagger": "6.5.0",
           "Swashbuckle.AspNetCore.SwaggerUI": "6.5.0",
-          "System.IdentityModel.Tokens.Jwt": "7.4.0",
-          "log4net": "2.0.16"
+          "System.IdentityModel.Tokens.Jwt": "7.4.0"
         },
         "runtime": {
           "WebApi2c2p.dll": {}
@@ -100,14 +99,14 @@
           }
         }
       },
-      "log4net/2.0.16": {
+      "log4net/2.0.17": {
         "dependencies": {
           "System.Configuration.ConfigurationManager": "6.0.1"
         },
         "runtime": {
           "lib/netstandard2.0/log4net.dll": {
-            "assemblyVersion": "2.0.16.0",
-            "fileVersion": "2.0.16.0"
+            "assemblyVersion": "2.0.17.0",
+            "fileVersion": "2.0.17.0"
           }
         }
       },
@@ -145,6 +144,17 @@
             "assemblyVersion": "8.0.3.0",
             "fileVersion": "8.0.324.11615"
           }
+        }
+      },
+      "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Features": "2.2.0",
+          "System.Text.Encodings.Web": "7.0.0"
+        }
+      },
+      "Microsoft.AspNetCore.Http.Features/2.2.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "8.0.0"
         }
       },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
@@ -741,7 +751,10 @@
         "dependencies": {
           "AutoMapper": "13.0.1",
           "DataAccess": "1.0.0",
-          "Newtonsoft.Json": "13.0.3"
+          "Infrastructure": "1.0.0",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Newtonsoft.Json": "13.0.3",
+          "RestSharp": "110.2.0"
         },
         "runtime": {
           "BussinesLogic.dll": {}
@@ -763,7 +776,9 @@
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
           "Microsoft.IdentityModel.Tokens": "7.4.0",
-          "System.IdentityModel.Tokens.Jwt": "7.4.0"
+          "Newtonsoft.Json": "13.0.3",
+          "System.IdentityModel.Tokens.Jwt": "7.4.0",
+          "log4net": "2.0.17"
         },
         "runtime": {
           "Infrastructure.dll": {}
@@ -812,12 +827,12 @@
       "path": "identitymodel/6.2.0",
       "hashPath": "identitymodel.6.2.0.nupkg.sha512"
     },
-    "log4net/2.0.16": {
+    "log4net/2.0.17": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-6MoFh1BB83ZPiUHXlIJQZsoXSMlwnrNHmiPTGCobA6Ik3fmeNVLgEwF0MjxZtec2PfB0WdL81XCAtxjrummCCg==",
-      "path": "log4net/2.0.16",
-      "hashPath": "log4net.2.0.16.nupkg.sha512"
+      "sha512": "sha512-qnnDf/ubJzwm2i1xH7nRMjEDoD+ctse7nZDqb+p7L1PvZc6ykpMoEesWr1/9hFqlsbII2v9e8yyQHJhoDQh7ZA==",
+      "path": "log4net/2.0.17",
+      "hashPath": "log4net.2.0.17.nupkg.sha512"
     },
     "Microsoft.AspNet.WebApi.Client/6.0.0": {
       "type": "package",
@@ -839,6 +854,20 @@
       "sha512": "sha512-VsDy8R6/0ushSpUow7m4lB82ovVBnI1e2AtPo1z22pzYzUjqY9QJvaexzqMkwmI3K1CVdT6MweXiWoqCcHrJbA==",
       "path": "microsoft.aspnetcore.authentication.jwtbearer/8.0.3",
       "hashPath": "microsoft.aspnetcore.authentication.jwtbearer.8.0.3.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Nxs7Z1q3f1STfLYKJSVXCs1iBl+Ya6E8o4Oy1bCxJ/rNI44E/0f6tbsrVqAWfB7jlnJfyaAtIalBVxPKUPQb4Q==",
+      "path": "microsoft.aspnetcore.http.abstractions/2.2.0",
+      "hashPath": "microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Http.Features/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ziFz5zH8f33En4dX81LW84I6XrYXKf9jg6aM39cM+LffN9KJahViKZ61dGMSO2gd3e+qe5yBRwsesvyqlZaSMg==",
+      "path": "microsoft.aspnetcore.http.features/2.2.0",
+      "hashPath": "microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
       "type": "package",

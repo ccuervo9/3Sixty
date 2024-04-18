@@ -66,11 +66,11 @@ namespace WebApi2c2p.Controllers
         [HttpPost]
         [SwaggerOperation("Retrieve transaction list including latest payment status. It can be called without any parameter but the result will only limitted to 500 results and/or within past full 12 months (whatever more limited)")]
         [Route("PrepaymentUI")]
-        public async Task<TransactionListResponseDTO> PrepaymentUI([FromBody] TransactionListDTO payment)
+        public TransactionListResponseDTO PrepaymentUI([FromBody] TransactionListDTO payment)
         {
             try
             {
-                           
+
                 return null;
 
             }
@@ -83,10 +83,5 @@ namespace WebApi2c2p.Controllers
             }
 
         }
-
-
-
-
-
     }
 }

@@ -10,3 +10,16 @@ C:\Repository\2c2p.WepAPI\2c2p.Web.Api\Infrastructure\obj\Release\net8.0\Infrast
 C:\Repository\2c2p.WepAPI\2c2p.Web.Api\Infrastructure\obj\Release\net8.0\refint\Infrastructure.dll
 C:\Repository\2c2p.WepAPI\2c2p.Web.Api\Infrastructure\obj\Release\net8.0\Infrastructure.pdb
 C:\Repository\2c2p.WepAPI\2c2p.Web.Api\Infrastructure\obj\Release\net8.0\ref\Infrastructure.dll
+C:\Repository\Git\3Sixty\2c2p.WepAPI\2c2p.Web.Api\Infrastructure\bin\Release\net8.0\Infrastructure.deps.json
+C:\Repository\Git\3Sixty\2c2p.WepAPI\2c2p.Web.Api\Infrastructure\bin\Release\net8.0\Infrastructure.dll
+C:\Repository\Git\3Sixty\2c2p.WepAPI\2c2p.Web.Api\Infrastructure\bin\Release\net8.0\Infrastructure.pdb
+C:\Repository\Git\3Sixty\2c2p.WepAPI\2c2p.Web.Api\Infrastructure\obj\Release\net8.0\Infrastructure.csproj.AssemblyReference.cache
+C:\Repository\Git\3Sixty\2c2p.WepAPI\2c2p.Web.Api\Infrastructure\obj\Release\net8.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repository\Git\3Sixty\2c2p.WepAPI\2c2p.Web.Api\Infrastructure\obj\Release\net8.0\Infrastructure.AssemblyInfoInputs.cache
+C:\Repository\Git\3Sixty\2c2p.WepAPI\2c2p.Web.Api\Infrastructure\obj\Release\net8.0\Infrastructure.AssemblyInfo.cs
+C:\Repository\Git\3Sixty\2c2p.WepAPI\2c2p.Web.Api\Infrastructure\obj\Release\net8.0\Infrastructure.csproj.CoreCompileInputs.cache
+C:\Repository\Git\3Sixty\2c2p.WepAPI\2c2p.Web.Api\Infrastructure\obj\Release\net8.0\Infrastructure.sourcelink.json
+C:\Repository\Git\3Sixty\2c2p.WepAPI\2c2p.Web.Api\Infrastructure\obj\Release\net8.0\Infrastructure.dll
+C:\Repository\Git\3Sixty\2c2p.WepAPI\2c2p.Web.Api\Infrastructure\obj\Release\net8.0\refint\Infrastructure.dll
+C:\Repository\Git\3Sixty\2c2p.WepAPI\2c2p.Web.Api\Infrastructure\obj\Release\net8.0\Infrastructure.pdb
+C:\Repository\Git\3Sixty\2c2p.WepAPI\2c2p.Web.Api\Infrastructure\obj\Release\net8.0\ref\Infrastructure.dll

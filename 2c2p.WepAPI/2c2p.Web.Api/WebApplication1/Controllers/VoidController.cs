@@ -30,10 +30,10 @@ namespace WebApi2c2p.Controllers
         [HttpPost]
         [SwaggerOperation("Void or cancel un-finished authorized transaction. Only transaction that not settled/captured yet can be voided.")]
         [Route("PaymentNonUI")]
-        public async Task<VoidResponseDTO> PaymentNonUI([FromBody] BussinesLogic.Entities.Void.VoidDTO voidEntitie)
+        public VoidResponseDTO PaymentNonUI([FromBody] BussinesLogic.Entities.Void.VoidDTO voidEntitie)
         {
 
-            return null; 
+            return null;
 
         }
     }

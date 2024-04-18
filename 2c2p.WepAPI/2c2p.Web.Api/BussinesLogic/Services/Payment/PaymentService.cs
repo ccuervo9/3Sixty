@@ -108,7 +108,7 @@ namespace BussinesLogic.Services.Payment
                             transactionAmount = new TransactionAmount
                             {
                                 amountText = item.amountText.ToString(),
-                                currencyCode ="USD", // Example value
+                                currencyCode = "USD", // Example value
                                 decimalPlaces = item.decimalPlaces,
                                 amount = item.pa_amount,
                             },
@@ -118,7 +118,7 @@ namespace BussinesLogic.Services.Payment
                                 currencyCode = "USD", // Example value
                                 decimalPlaces = item.decimalPlaces,
                                 amount = item.pa_amount,
-                               
+
                             },
 
                             notificationURLs = new NotificationURLs
@@ -226,7 +226,7 @@ namespace BussinesLogic.Services.Payment
                                 personName = "",
                                 seqNo = "1" // Example value
                             }
-                           
+
                         };
                         paymentDTOList.Add(paymentDTO);
 
@@ -239,9 +239,9 @@ namespace BussinesLogic.Services.Payment
 
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw ex;
+                throw;
             }
         }
 
@@ -251,7 +251,7 @@ namespace BussinesLogic.Services.Payment
         /// </summary>
         /// <param name="payment">PaymentResponseDTO</param>
         /// <returns>true /false</returns>
-        public bool UpdateStatusTransaction(PaymentResponseDTO paymentResponseDTO , PaymentDTO paymentDto)
+        public bool UpdateStatusTransaction(PaymentResponseDTO paymentResponseDTO, PaymentDTO paymentDto)
         {
             try
             {
@@ -259,12 +259,12 @@ namespace BussinesLogic.Services.Payment
                 {
                     return _Repository.Update(
                         "A",
-                        null,
+                        "A",
                         paymentDto.RecordNo,
                         paymentDto.SifNo,
-                        paymentDto.Sector, 
+                        paymentDto.Sector,
                         paymentDto.FlightNo,
-                        paymentDto.orderNo,
+                        paymentDto.pa_OrderNo,
                          paymentDto.PA_LineNo
                         );
                 }
@@ -272,20 +272,21 @@ namespace BussinesLogic.Services.Payment
                 {
                     return _Repository.Update(
                       "D",
-                      null,
+                      " ",
                       paymentDto.RecordNo,
                       paymentDto.SifNo,
                       paymentDto.Sector,
                       paymentDto.FlightNo,
-                      paymentDto.orderNo,
+                      paymentDto.pa_OrderNo,
                        paymentDto.PA_LineNo
                       );
                 }
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                return false;
+                return false; 
+                throw;
             }
 
         }

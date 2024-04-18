@@ -31,7 +31,8 @@ SET nocount ON;
 BEGIN
 
     declare @PA_SifNo nvarchar(max)
-
+	-- exec [dbo].[Usp_UpdateTransactions_2c2p] 'D',null,null,'MFM 717799','1',
+	--  '825','1', '1'
     --- select * 
     --- from [dbo].[Tab_CreditCardTransDetails]
     update [dbo].[Tab_CreditCardTransDetails]
@@ -43,6 +44,11 @@ BEGIN
           and CTD_Sector = @Sector
           and CTD_FlightNo = @FlightNo
 
+
+select * from [dbo].[Tab_CreditCardTransDetails] where CTD_RecordNo = @RecordNo
+          and CTD_SifNo = @SifNo
+          and CTD_Sector = @Sector
+          and CTD_FlightNo = @FlightNo
     ---
     --- select * from [dbo].[Tab_PaymentLine]
 
@@ -53,7 +59,10 @@ BEGIN
           and PA_OrderNo = @OrderNo
           and PA_LineNo = @LineNo
 
-
+	Select PA_OrderNo, * from [dbo].[Tab_PaymentLine]	  where PA_SifNo = @SifNo
+          and PA_Sector = @Sector
+          and PA_OrderNo = @OrderNo
+          and PA_LineNo = @LineNo
 --delete card if it is aprove it 'A'
 --ctd_cardNoBx
 

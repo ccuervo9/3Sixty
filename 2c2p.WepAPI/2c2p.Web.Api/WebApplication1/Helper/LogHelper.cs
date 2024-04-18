@@ -119,9 +119,9 @@ namespace WebApi2c2p.Helper
                     Log(logMessage, w);
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw ex;
+                throw;
             }
         }
 
@@ -136,7 +136,7 @@ namespace WebApi2c2p.Helper
                 txtWriter.WriteLine("  :{0}", logMessage);
                 txtWriter.WriteLine("-------------------------------");
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 throw;
             }

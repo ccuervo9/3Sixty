@@ -50,7 +50,7 @@ namespace DataAccess.Repository.Payment
                      {
                         new SqlParameter("@Status"          ,status),
                         new SqlParameter("@ReturnStatus"    ,returnStatus  != string.Empty ? returnStatus:  DBNull.Value),
-                        new SqlParameter("@RecordNo"        ,RecordNo),
+                        new SqlParameter("@RecordNo"        ,RecordNo != string.Empty ? returnStatus:  DBNull.Value),
                         new SqlParameter("@SifNo"           ,SifNo),
                         new SqlParameter("@Sector"          ,Sector),
                         new SqlParameter("@FlightNo"        ,FlightNo),
@@ -71,9 +71,10 @@ namespace DataAccess.Repository.Payment
                 return ValidateResult(result);
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                return false;
+                return false;   
+                throw;
             }
         }
 
@@ -112,9 +113,9 @@ namespace DataAccess.Repository.Payment
 
                 return true;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw ex;
+                throw;
             }
 
         }
@@ -126,8 +127,8 @@ namespace DataAccess.Repository.Payment
                 var parameters = new SqlParameter[]
                      {
                         new SqlParameter("@xAirlineCode", xAirlineCode != 0 ? xAirlineCode:  DBNull.Value ),
-                        new SqlParameter("@xDateFrom", xDateFrom != null ? xAirlineCode:  DBNull.Value ),
-                        new SqlParameter("@xDateTo", xDateTo != null? xAirlineCode:  DBNull.Value ),
+                        new SqlParameter("@xDateFrom", xDateFrom.ToString() != null ? xAirlineCode:  DBNull.Value ),
+                        new SqlParameter("@xDateTo", xDateTo.ToString() != null? xAirlineCode:  DBNull.Value ),
 
                      };
                 var command = "exec Usp_creditcardstoprocess_2c2p " +
@@ -140,9 +141,9 @@ namespace DataAccess.Repository.Payment
 
                 return result;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw ex;
+                throw;
             }
 
         }
