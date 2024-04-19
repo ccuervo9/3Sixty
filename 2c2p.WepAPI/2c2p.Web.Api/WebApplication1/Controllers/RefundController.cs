@@ -52,18 +52,19 @@ namespace WebApi2c2p.Controllers
 
                 string jsonString = JsonOperations.ToJson(refund);
 
-                var request = new RestRequest(jsonString);
-                request.AddHeader("accept", "application/json");
-                request.AddHeader("apiKey", "12");
+                //var request = new RestRequest(jsonString);
+                //request.AddHeader("accept", "application/json");
+                //request.AddHeader("apiKey", "12");
 
-                request.AddJsonBody(jsonString, false);
-                var response = await client.PostAsync(request);
+                //request.AddJsonBody(jsonString, false);
+                //var response = await client.PostAsync(request);
 
-                Console.WriteLine("{0}", response.Content);
+                //Console.WriteLine("{0}", response.Content);
 
-                RefundResponseDTO paymentResponse = JsonConvert.DeserializeObject<RefundResponseDTO>(jsonString);
-                LogHelper.LogInfo(this.HttpContext, jsonString, JsonOperations.ToJson(response.Content), LogTypeEnum.info);
-                return paymentResponse;
+                //RefundResponseDTO paymentResponse = JsonConvert.DeserializeObject<RefundResponseDTO>(jsonString);
+                //LogHelper.LogInfo(this.HttpContext, jsonString, JsonOperations.ToJson(response.Content), LogTypeEnum.info);
+                
+                throw new NotImplementedException();
 
             }
 

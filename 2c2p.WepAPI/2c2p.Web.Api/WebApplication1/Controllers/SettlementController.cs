@@ -56,12 +56,13 @@ namespace WebApi2c2p.Controllers
                 request.AddHeader("apiKey", "12");
                 string jsonString = JsonOperations.ToJson(settlement);
                 request.AddJsonBody(jsonString, false);
-                var response = await client.PutAsync(request);
+                throw new NotImplementedException();
+                //var response = await client.PutAsync(request);
 
 
-                SettlementResponseDTO paymentResponse = JsonConvert.DeserializeObject<SettlementResponseDTO>(jsonString);
-                LogHelper.LogInfo(this.HttpContext, jsonString, JsonOperations.ToJson(response.Content), LogTypeEnum.info);
-                return paymentResponse;              
+                //SettlementResponseDTO paymentResponse = JsonConvert.DeserializeObject<SettlementResponseDTO>(jsonString);
+                //LogHelper.LogInfo(this.HttpContext, jsonString, JsonOperations.ToJson(response.Content), LogTypeEnum.info);
+                //return paymentResponse;              
 
             }
           

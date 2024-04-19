@@ -37,20 +37,8 @@ namespace WebApi2c2p.Controllers
         {
             try
             {
-           
-                var options = new RestClientOptions(configValue.ReadConfig("2c2pConfigs", "urlInquiryTransactionStatus"+"?orderNo=" + OrderNo));
 
-                var client = new RestClient(options);
-                var request = new RestRequest("");
-                request.AddHeader("accept", "application/json");
-                request.AddHeader("apiKey", "12");
-                var response = await client.GetAsync(request);
-                Console.WriteLine("{0}", response.Content);
-         
-
-                TransactionStatusResponseDTO paymentResponse = JsonConvert.DeserializeObject<TransactionStatusResponseDTO>(OrderNo);
-                LogHelper.LogInfo(this.HttpContext, OrderNo, JsonOperations.ToJson(response.Content), LogTypeEnum.info);
-                return paymentResponse;              
+                throw new NotImplementedException();
 
             }
           
@@ -71,7 +59,7 @@ namespace WebApi2c2p.Controllers
             try
             {
 
-                return null;
+                throw new NotImplementedException();
 
             }
 

@@ -33,7 +33,7 @@ namespace WebApi2c2p.Controllers
         public VoidResponseDTO PaymentNonUI([FromBody] BussinesLogic.Entities.Void.VoidDTO voidEntitie)
         {
 
-            return null;
+            throw new NotImplementedException();
 
         }
     }
