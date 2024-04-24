@@ -24,7 +24,7 @@ create or alter procedure [dbo].[Usp_InsertTransactions_2c2p]
     @OrderNo nvarchar(max)
 )
 
---- exec [dbo].[Usp_InsertTransactions_2c2p] 'MFM 717861' , '1' , '1'
+--- exec [dbo].[Usp_InsertTransactions_2c2p] 'MFM 717851' , '1' , '1'
 
 AS
 SET nocount ON;
@@ -78,7 +78,7 @@ BEGIN
            @OH_OrderNo + 1,
            PA_Amount,
            0,
-           null,
+           ' ',
            getdate(),
            0,
            pa_OriginalSector,
@@ -108,6 +108,7 @@ BEGIN
     where PA_SifNo = @SifNo
           and pa_Sector = @Sector
           and pa_OrderNo = @OrderNo
+		    and pa_processstatus = ''
 
 declare @maxRecordNo  int 
 select @maxRecordNo = max ([CTD_RecordNo]) from [Tab_CreditCardTransDetails] 
@@ -169,7 +170,7 @@ select @maxRecordNo = max ([CTD_RecordNo]) from [Tab_CreditCardTransDetails]
            pa_ExpiryDateBX,
            null pa_RecID,
            0 pa_MaskedCardNo, -- TO DO 
-           OH_PointCardType pa_CardType,
+           'VI' pa_CardType,
            'RAS_WCF_public_key' pa_KeyCode,
            '' pa_ResubReturnStatus,
            pa_MagTrack1,
@@ -182,7 +183,8 @@ select @maxRecordNo = max ([CTD_RecordNo]) from [Tab_CreditCardTransDetails]
             ON OH.oh_sifno = PL.pa_sifno
     where PA_SifNo =   @SifNo
           and pa_Sector = @Sector
-          and pa_OrderNo = @OrderNo
-	order by pa_OrderNumber desc 
+          and pa_OrderNo = @OrderNo  
+		  and    PL.pa_processstatus = ''
+		  order by pa_OrderNumber desc 
 end
 GO

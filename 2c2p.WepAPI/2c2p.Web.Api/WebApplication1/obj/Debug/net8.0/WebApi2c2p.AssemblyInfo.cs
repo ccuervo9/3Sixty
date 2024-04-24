@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebApi2c2p")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1bc406da4309a4add7444a631ed664df00960636")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc971046e47a99f15bba64ac79077aca197fc734")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebApi2c2p")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebApi2c2p")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

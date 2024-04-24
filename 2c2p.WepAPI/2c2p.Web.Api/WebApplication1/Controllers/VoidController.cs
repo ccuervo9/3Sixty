@@ -1,16 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using RestSharp;
 using System;
-using System.Threading.Tasks;
-using Newtonsoft.Json;
 using WebApi2c2p.Helper;
-using System.Net.Http;
-using System.Net;
 using Microsoft.AspNetCore.Authorization;
 using BussinesLogic.Entities.Void;
 using Swashbuckle.AspNetCore.Annotations;
 using BussinesLogic.Interfaces.Void;
-using Infrastructure.Helper;
 
 namespace WebApi2c2p.Controllers
 {

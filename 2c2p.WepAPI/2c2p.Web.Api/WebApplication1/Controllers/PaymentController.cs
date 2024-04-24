@@ -172,7 +172,8 @@ namespace WebApi2c2p.Controllers
             catch (Exception ex)
             {
                 LogHelper.LogInfo(this.HttpContext, "Exeption External API " , ex.Message.ToString(), LogTypeEnum.error);
-                return false;
+                throw;
+       
             }
         }
 

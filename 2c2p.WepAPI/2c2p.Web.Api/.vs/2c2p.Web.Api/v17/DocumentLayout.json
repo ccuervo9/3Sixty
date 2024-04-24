@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AAC015D6-206A-442D-B780-2C9F1C74C50A}|2c2pConsoleAPI\\2c2pConsoleAPI.csproj|c:\\repository\\git\\3sixty\\2c2p.wepapi\\2c2p.web.api\\2c2pconsoleapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AAC015D6-206A-442D-B780-2C9F1C74C50A}|2c2pConsoleAPI\\2c2pConsoleAPI.csproj|solutionrelative:2c2pconsoleapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{16FB14A5-26F4-46DE-ADD5-D5FD3DE84E71}|WebApplication1\\WebApi2c2p.csproj|c:\\repository\\git\\3sixty\\2c2p.wepapi\\2c2p.web.api\\webapplication1\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16FB14A5-26F4-46DE-ADD5-D5FD3DE84E71}|WebApplication1\\WebApi2c2p.csproj|solutionrelative:webapplication1\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5865407-2B14-44D1-B15C-5B95B1023FE9}|BussinesLogic\\BussinesLogic.csproj|c:\\repository\\git\\3sixty\\2c2p.wepapi\\2c2p.web.api\\bussineslogic\\services\\payment\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5865407-2B14-44D1-B15C-5B95B1023FE9}|BussinesLogic\\BussinesLogic.csproj|solutionrelative:bussineslogic\\services\\payment\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5865407-2B14-44D1-B15C-5B95B1023FE9}|BussinesLogic\\BussinesLogic.csproj|c:\\repository\\git\\3sixty\\2c2p.wepapi\\2c2p.web.api\\bussineslogic\\interfaces\\payment\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5865407-2B14-44D1-B15C-5B95B1023FE9}|BussinesLogic\\BussinesLogic.csproj|solutionrelative:bussineslogic\\interfaces\\payment\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{16FB14A5-26F4-46DE-ADD5-D5FD3DE84E71}|WebApplication1\\WebApi2c2p.csproj|c:\\repository\\git\\3sixty\\2c2p.wepapi\\2c2p.web.api\\webapplication1\\controllers\\voidcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{16FB14A5-26F4-46DE-ADD5-D5FD3DE84E71}|WebApplication1\\WebApi2c2p.csproj|solutionrelative:webapplication1\\controllers\\voidcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAC015D6-206A-442D-B780-2C9F1C74C50A}|2c2pConsoleAPI\\2c2pConsoleAPI.csproj|c:\\repository\\git\\3sixty\\2c2p.wepapi\\2c2p.web.api\\2c2pconsoleapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAC015D6-206A-442D-B780-2C9F1C74C50A}|2c2pConsoleAPI\\2c2pConsoleAPI.csproj|solutionrelative:2c2pconsoleapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{16FB14A5-26F4-46DE-ADD5-D5FD3DE84E71}|WebApplication1\\WebApi2c2p.csproj|c:\\repository\\git\\3sixty\\2c2p.wepapi\\2c2p.web.api\\webapplication1\\controllers\\settlementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,20 +31,12 @@
       "RelativeMoniker": "D:0:0:{16FB14A5-26F4-46DE-ADD5-D5FD3DE84E71}|WebApplication1\\WebApi2c2p.csproj|solutionrelative:webapplication1\\controllers\\refundcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{16FB14A5-26F4-46DE-ADD5-D5FD3DE84E71}|WebApplication1\\WebApi2c2p.csproj|c:\\repository\\git\\3sixty\\2c2p.wepapi\\2c2p.web.api\\webapplication1\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16FB14A5-26F4-46DE-ADD5-D5FD3DE84E71}|WebApplication1\\WebApi2c2p.csproj|solutionrelative:webapplication1\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{16FB14A5-26F4-46DE-ADD5-D5FD3DE84E71}|WebApplication1\\WebApi2c2p.csproj|c:\\repository\\git\\3sixty\\2c2p.wepapi\\2c2p.web.api\\webapplication1\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{16FB14A5-26F4-46DE-ADD5-D5FD3DE84E71}|WebApplication1\\WebApi2c2p.csproj|solutionrelative:webapplication1\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{16FB14A5-26F4-46DE-ADD5-D5FD3DE84E71}|WebApplication1\\WebApi2c2p.csproj|c:\\repository\\git\\3sixty\\2c2p.wepapi\\2c2p.web.api\\webapplication1\\controllers\\inquirycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{16FB14A5-26F4-46DE-ADD5-D5FD3DE84E71}|WebApplication1\\WebApi2c2p.csproj|solutionrelative:webapplication1\\controllers\\inquirycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D5865407-2B14-44D1-B15C-5B95B1023FE9}|BussinesLogic\\BussinesLogic.csproj|c:\\repository\\git\\3sixty\\2c2p.wepapi\\2c2p.web.api\\bussineslogic\\services\\payment\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D5865407-2B14-44D1-B15C-5B95B1023FE9}|BussinesLogic\\BussinesLogic.csproj|solutionrelative:bussineslogic\\services\\payment\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{16FB14A5-26F4-46DE-ADD5-D5FD3DE84E71}|WebApplication1\\WebApi2c2p.csproj|c:\\repository\\git\\3sixty\\2c2p.wepapi\\2c2p.web.api\\webapplication1\\helper\\loghelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -99,10 +103,6 @@
       "RelativeMoniker": "D:0:0:{014E1A15-2459-49B3-A6F5-E7367BF02834}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D5865407-2B14-44D1-B15C-5B95B1023FE9}|BussinesLogic\\BussinesLogic.csproj|c:\\repository\\git\\3sixty\\2c2p.wepapi\\2c2p.web.api\\bussineslogic\\interfaces\\payment\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D5865407-2B14-44D1-B15C-5B95B1023FE9}|BussinesLogic\\BussinesLogic.csproj|solutionrelative:bussineslogic\\interfaces\\payment\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D5865407-2B14-44D1-B15C-5B95B1023FE9}|BussinesLogic\\BussinesLogic.csproj|c:\\repository\\git\\3sixty\\2c2p.wepapi\\2c2p.web.api\\bussineslogic\\helpers\\enumsvariables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D5865407-2B14-44D1-B15C-5B95B1023FE9}|BussinesLogic\\BussinesLogic.csproj|solutionrelative:bussineslogic\\helpers\\enumsvariables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -133,18 +133,18 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 344,
-          "SelectedChildIndex": 2,
+          "DockedWidth": 323,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "PaymentController.cs",
               "DocumentMoniker": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\WebApplication1\\Controllers\\PaymentController.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Controllers\\PaymentController.cs",
-              "ToolTip": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\WebApplication1\\Controllers\\PaymentController.cs",
-              "RelativeToolTip": "WebApplication1\\Controllers\\PaymentController.cs",
-              "ViewState": "AQIAALAAAAAAAAAAAAAUwJEAAABGAAAA",
+              "ToolTip": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\WebApplication1\\Controllers\\PaymentController.cs*",
+              "RelativeToolTip": "WebApplication1\\Controllers\\PaymentController.cs*",
+              "ViewState": "AQIAAIAAAAAAAAAAAAAQwK4AAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-22T02:49:02.084Z",
               "IsPinned": true,
@@ -152,33 +152,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SettlementController.cs",
-              "DocumentMoniker": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\WebApplication1\\Controllers\\SettlementController.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\SettlementController.cs",
-              "ToolTip": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\WebApplication1\\Controllers\\SettlementController.cs",
-              "RelativeToolTip": "WebApplication1\\Controllers\\SettlementController.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAjwDoAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T14:34:25.554Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "VoidController.cs",
               "DocumentMoniker": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\WebApplication1\\Controllers\\VoidController.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Controllers\\VoidController.cs",
               "ToolTip": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\WebApplication1\\Controllers\\VoidController.cs",
               "RelativeToolTip": "WebApplication1\\Controllers\\VoidController.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAD4vyYAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-10T14:34:49.583Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "RefundController.cs",
               "DocumentMoniker": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\WebApplication1\\Controllers\\RefundController.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Controllers\\RefundController.cs",
@@ -191,7 +178,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IPaymentService.cs",
+              "DocumentMoniker": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\BussinesLogic\\Interfaces\\Payment\\IPaymentService.cs",
+              "RelativeDocumentMoniker": "BussinesLogic\\Interfaces\\Payment\\IPaymentService.cs",
+              "ToolTip": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\BussinesLogic\\Interfaces\\Payment\\IPaymentService.cs",
+              "RelativeToolTip": "BussinesLogic\\Interfaces\\Payment\\IPaymentService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA4AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T15:59:31.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "SettlementController.cs",
+              "DocumentMoniker": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\WebApplication1\\Controllers\\SettlementController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\SettlementController.cs",
+              "ToolTip": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\WebApplication1\\Controllers\\SettlementController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\SettlementController.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAjwDoAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T14:34:25.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "LoginController.cs",
               "DocumentMoniker": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\WebApplication1\\Controllers\\LoginController.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Controllers\\LoginController.cs",
@@ -204,7 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "InquiryController.cs",
               "DocumentMoniker": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\WebApplication1\\Controllers\\InquiryController.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Controllers\\InquiryController.cs",
@@ -217,7 +230,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "PaymentRepository.cs",
               "DocumentMoniker": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\DataAccess\\Repository\\Payment\\PaymentRepository.cs",
               "RelativeDocumentMoniker": "DataAccess\\Repository\\Payment\\PaymentRepository.cs",
@@ -230,7 +243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "TransactionListRepository.cs",
               "DocumentMoniker": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\DataAccess\\Repository\\Inquiry\\TransactionListRepository.cs",
               "RelativeDocumentMoniker": "DataAccess\\Repository\\Inquiry\\TransactionListRepository.cs",
@@ -243,7 +256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Logger.cs",
               "DocumentMoniker": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\WebApplication1\\Helper\\Logger.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Helper\\Logger.cs",
@@ -256,7 +269,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\WebApplication1\\appsettings.json",
               "RelativeDocumentMoniker": "WebApplication1\\appsettings.json",
@@ -269,7 +282,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "2c2pConsoleAPI",
               "DocumentMoniker": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\2c2pConsoleAPI\\2c2pConsoleAPI.csproj",
               "RelativeDocumentMoniker": "2c2pConsoleAPI\\2c2pConsoleAPI.csproj",
@@ -282,7 +295,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "TransactionStatusRepository.cs",
               "DocumentMoniker": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\DataAccess\\Repository\\Inquiry\\TransactionStatusRepository.cs",
               "RelativeDocumentMoniker": "DataAccess\\Repository\\Inquiry\\TransactionStatusRepository.cs",
@@ -295,7 +308,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\WebApplication1\\Program.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
@@ -308,7 +321,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Startup.cs",
               "DocumentMoniker": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\WebApplication1\\Startup.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Startup.cs",
@@ -321,7 +334,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "SwaggerConfig.cs",
               "DocumentMoniker": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\WebApplication1\\SwaggerConfig.cs",
               "RelativeDocumentMoniker": "WebApplication1\\SwaggerConfig.cs",
@@ -334,7 +347,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "PaymentModel.cs",
               "DocumentMoniker": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\DataAccess\\Model\\Payment\\PaymentModel.cs",
               "RelativeDocumentMoniker": "DataAccess\\Model\\Payment\\PaymentModel.cs",
@@ -347,7 +360,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "UserModel.cs",
               "DocumentMoniker": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\DataAccess\\Model\\Authorize\\UserModel.cs",
               "RelativeDocumentMoniker": "DataAccess\\Model\\Authorize\\UserModel.cs",
@@ -360,7 +373,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\DataAccess\\Context\\AppDbContext.cs",
               "RelativeDocumentMoniker": "DataAccess\\Context\\AppDbContext.cs",
@@ -373,20 +386,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "IPaymentService.cs",
-              "DocumentMoniker": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\BussinesLogic\\Interfaces\\Payment\\IPaymentService.cs",
-              "RelativeDocumentMoniker": "BussinesLogic\\Interfaces\\Payment\\IPaymentService.cs",
-              "ToolTip": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\BussinesLogic\\Interfaces\\Payment\\IPaymentService.cs",
-              "RelativeToolTip": "BussinesLogic\\Interfaces\\Payment\\IPaymentService.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAAAA4AAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T15:59:31.636Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "IPaymentRepository.cs",
               "DocumentMoniker": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\DataAccess\\Interfaces\\Payment\\IPaymentRepository.cs",
               "RelativeDocumentMoniker": "DataAccess\\Interfaces\\Payment\\IPaymentRepository.cs",
@@ -477,38 +477,12 @@
           ]
         },
         {
-          "DockedWidth": 249,
-          "SelectedChildIndex": 2,
+          "DockedWidth": 270,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Logger.cs",
-              "DocumentMoniker": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\Infrastructure\\Helper\\Logger.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Helper\\Logger.cs",
-              "ToolTip": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\Infrastructure\\Helper\\Logger.cs",
-              "RelativeToolTip": "Infrastructure\\Helper\\Logger.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T17:21:10.669Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LogHelper.cs",
-              "DocumentMoniker": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\WebApplication1\\Helper\\LogHelper.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Helper\\LogHelper.cs",
-              "ToolTip": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\WebApplication1\\Helper\\LogHelper.cs",
-              "RelativeToolTip": "WebApplication1\\Helper\\LogHelper.cs",
-              "ViewState": "AQIAAE8AAAAAAAAAAIAwwGMAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T17:19:59.158Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\2c2pConsoleAPI\\Program.cs",
               "RelativeDocumentMoniker": "2c2pConsoleAPI\\Program.cs",
@@ -521,20 +495,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "PaymentService.cs",
               "DocumentMoniker": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\BussinesLogic\\Services\\Payment\\PaymentService.cs",
               "RelativeDocumentMoniker": "BussinesLogic\\Services\\Payment\\PaymentService.cs",
               "ToolTip": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\BussinesLogic\\Services\\Payment\\PaymentService.cs",
               "RelativeToolTip": "BussinesLogic\\Services\\Payment\\PaymentService.cs",
-              "ViewState": "AQIAAPAAAAAAAAAAAAApwAEBAAAQAAAA",
+              "ViewState": "AQIAAOYAAAAAAAAAAAAQwP0AAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-04T16:29:46.498Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 9,
+              "Title": "LogHelper.cs",
+              "DocumentMoniker": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\WebApplication1\\Helper\\LogHelper.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Helper\\LogHelper.cs",
+              "ToolTip": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\WebApplication1\\Helper\\LogHelper.cs",
+              "RelativeToolTip": "WebApplication1\\Helper\\LogHelper.cs",
+              "ViewState": "AQIAAE8AAAAAAAAAAIAwwGMAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T17:19:59.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Logger.cs",
+              "DocumentMoniker": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\Infrastructure\\Helper\\Logger.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Helper\\Logger.cs",
+              "ToolTip": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\Infrastructure\\Helper\\Logger.cs",
+              "RelativeToolTip": "Infrastructure\\Helper\\Logger.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T17:21:10.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "LogTypeEnum.cs",
               "DocumentMoniker": "C:\\Repository\\Git\\3Sixty\\2c2p.WepAPI\\2c2p.Web.Api\\Infrastructure\\Helper\\LogTypeEnum.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Helper\\LogTypeEnum.cs",
